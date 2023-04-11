@@ -1,5 +1,5 @@
 const express = require("express");
-require("dotenv").config();
+require("dotenv").config({ path: 'config.env' });
 const app = express();
 const http = require("http");
 const port = process.env.PORT || 5000;
@@ -22,13 +22,13 @@ io.on("connection", (socket) => {
 
   socket.on("join_room", (data) => {
     socket.join(data);
-    //console.log(`User With ID: ${socket.id} joined room : ${data}`);
+    console.log(`User With ID: ${socket.id} joined room : ${data}`);
   });
   socket.on("send_message", (data) => {
     socket.to(data.room).emit("receive_message", data);
   });
   socket.on("disconnect", () => {
-    //console.log("User Disconnected", socket.id);
+    console.log("User Disconnected", socket.id);
   });
 });
 

@@ -27,6 +27,7 @@ export default function BasicSelect() {
           <MenuItem value="other-stationary">Other Stationary</MenuItem>
           <MenuItem value="clothing_essentials">Clothing Essentials</MenuItem>
           <MenuItem value="books">Books</MenuItem>
+          <MenuItem value="flair">flair</MenuItem>
           <MenuItem value="daily-use">Daily Use</MenuItem>
         </Select>
       </FormControl>

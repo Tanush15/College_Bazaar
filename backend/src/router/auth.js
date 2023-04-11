@@ -203,7 +203,8 @@ router.post('/signin',async (req,res)=>{
         //Generatig JWT authentication token
         const token = await userLogin.generateAuthToken();
         res.cookie('jwtoken',token,{
-            expires: new Date(Date.now()+ 25892000000),//The cookie will expire in 30 days from the date the user had logged in .
+            expires: new Date(Date.now()+ 25892000000),
+            //The cookie will expire in 30 days from the date the user had logged in .
             //The value above need to be provided in millisconds    
             httpOnly:true, //Else it will work only in secure
         });

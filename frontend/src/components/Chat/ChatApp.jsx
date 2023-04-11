@@ -3,7 +3,7 @@ import { useState } from "react";
 import Chat from "./Chat";
 import Style from "./css/style.css";
 
-const socket = io.connect("http://wwww.google.com");
+const socket = io.connect("http://localhost:4000");
 
 function App(props) {
   const [username, setUsername] = useState("");

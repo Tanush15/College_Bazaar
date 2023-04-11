@@ -4,9 +4,7 @@ import { Accordion } from "flowbite-react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Route, Routes } from "react-router-dom";
-import data from "../components/message.json";
 import KnowMore from "./KnowMore";
-import { ClassNames } from "@emotion/react";
 const image1 = require("../assets/img/icons8-age-100.png");
 const image2 = require("../assets/img/icons8-rating-100.png");
 const image5 = require("../assets/img/search.ico");
@@ -121,9 +119,9 @@ const Listing = () => {
   //     });
   //     return currentValue.list.length !== 0;
   //   });
-  //   setdat(res);
-  //   console.log(res);
-  //   console.log(dat);
+    // setdat(res);
+    // console.log(res);
+    // console.log(dat);
   // };
 
   const filtertags = (val, b) => {
@@ -172,6 +170,7 @@ const Listing = () => {
   else {
     return (
       <>
+      <div className="">hi</div>
         <div class="">
           <div className="  flex justify-center  bg-[url('https://source.unsplash.com/1600x400/?home')] bg-cover  ">
             <div className="flex justify-center w-4/5">
@@ -189,7 +188,7 @@ const Listing = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row bg-bg">
-          {/* <div className=" bg-transparent lg:w-[95%]"> */}
+          {/* <div className=" bg-transparent lg:w-[95%]"> */}.
           <div className="w-[] lg:w-[340px] bg-white mb-3 mt-3  mr-10 lg:mr-0 lg:ml-3 rounded-sm  block lg:sticky top-3 shadow-md shadow-gray-600 h-fit m-auto">
             <Accordion alwaysOpen={true}>
               <Accordion.Panel>
@@ -240,7 +239,7 @@ const Listing = () => {
                             type="radio"
                             id="Hostel"
                             name="tag"
-                            className="mr-2"
+                            className="mr-2"c
                             onChange={() => filtertags("Clothing_essentials", !x3)}
                           />
                           Clothing_essentials
@@ -248,7 +247,7 @@ const Listing = () => {
                         <div className="block my-1">
                           {" "}
                           <input
-                            type="radio"
+                            type="radio"qy
                             id="Buy"
                             name="tag"
                             className="mr-2"
